@@ -1,0 +1,44 @@
+
+    <div class="brands2 brands">
+        <a href="#"> <img class="img-responsive insurance" src="https://dj9ixu2laiuvi.cloudfront.net/images/condusef.png" width="20%" alt="condusef"><img class="img-responsive insurance" src="https://dj9ixu2laiuvi.cloudfront.net/images/cnsf.png" width="20%" alt="cnsf"></a>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="text-center socialicons">
+
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Flineaseguros%2F&width=63&layout=box_count&action=like&size=large&show_faces=true&share=false&height=65&appId" width="63" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+            </div>
+            <ul class="list-inline">
+                <li class="linksfoot"><a href="https://lineaseguros.mx/integral/privacidad.php" target="_blank">Politica de Privacidad</a></li>
+                <li class="linksfoot"><a href="https://lineaseguros.mx/integral/terminos.php" target="_blank">Terminos y Condiciones</a></li>
+                <li class="linksfoot"><a href="https://lineaseguros.mx/cotizaciones/index.php" target="_blank">Cont&aacutectanos</a></li>
+
+
+            </ul>
+            <p class="copyright">Linea Seguros © 2018</p>
+        </footer>
+    </div>
+    <script src="https://lineaseguros.mx/landers/js/jquery.min.js"></script>
+    <script src="https://lineaseguros.mx/landers/js/parsley.js"></script>
+    <script src="https://lineaseguros.mx/landers/js/steps.js"></script>
+    <script src="https://lineaseguros.mx/landers/js/bootstrap.min.js"></script>
+
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyIaLG0oCQJ2ph1M465QpT_IsEhNGgIv7V6RCKA8QdM9NJr8OPQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+
+</body>
+
+</html>    
